@@ -1,14 +1,14 @@
 # Musen Design (Website Reconstruction)
-
-**File:** `musen.html`  
-
 This project reconstructs the Musen Design website using pure HTML and CSS.
 
+## File
+ `musen.html`  
+ 
 ## Features
-- Hand-coded HTML and CSS
-- Responsive Web Design (RWD)
-- Separate layouts for desktop, tablet, and mobile devices
-- Single-page homepage
+- Hand-coded HTML and CSS.
+- Responsive Web Design (RWD).
+- Separate layouts for desktop, tablet, and mobile devices.
+- Single-page homepage.
 
 ## Optimal Display Size
 - **Desktop:** 1707 × 940
