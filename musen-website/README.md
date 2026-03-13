@@ -1,6 +1,8 @@
 # Musen Design (Website Reconstruction)
 This project reconstructs the Musen Design website using pure HTML and CSS.
 
+Technology: **HTML, CSS**
+
 ## File
  `musen.html`  
  
@@ -14,3 +16,4 @@ This project reconstructs the Musen Design website using pure HTML and CSS.
 - **Desktop:** 1707 × 940
 - **Tablet:** 854 × 947
 - **Mobile:** 500 × 947
+
