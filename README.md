@@ -6,6 +6,6 @@ Technology: **HTML, CSS, JavaScript, Vue.js**
 <br>
 Projects:
 
-• [Musen](https://github.com/immamy/web-projects/musen-website.git)
+• [Musen](https://github.com/immamy/web-projects/tree/main/musen-website)
 
-• [PearCafe](https://github.com/immamy/web-projects/pearcafe-website.git)
+• [PearCafe](https://github.com/immamy/web-projects/tree/main/pearcafe-website)
