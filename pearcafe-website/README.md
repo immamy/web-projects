@@ -26,7 +26,7 @@ Technology: **Vue.js, HTML, CSS, JavaScript, JSON**
 - **Tablet:** 854 × 947
 - **Mobile:** 500 × 947
 
-# Website sections include:
+## Website sections include:
 - Home
 - About the store
 - Lectures
@@ -41,3 +41,4 @@ For the Vue-based version, please refer to:
 `Design Docs_Developer.pdf`
 
 This document explains the system structure and development workflow.
+
