@@ -16,4 +16,3 @@ Technology: **HTML, CSS**
 - **Desktop:** 1707 × 940
 - **Tablet:** 854 × 947
 - **Mobile:** 500 × 947
-
