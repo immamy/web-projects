@@ -27,7 +27,7 @@ Technology: **Vue.js, HTML, CSS, JavaScript, JSON**
 - **Mobile:** 500 × 947
 
 # Website sections include:
-- Home 首頁
+- Home
 - About the store
 - Lectures
 - Menu 
@@ -37,5 +37,7 @@ Technology: **Vue.js, HTML, CSS, JavaScript, JSON**
 
 ## Documentation
 For the Vue-based version, please refer to:
+
 `Design Docs_Developer.pdf`
+
 This document explains the system structure and development workflow.
