@@ -1,6 +1,6 @@
 # Pearcafe
 
-## File
+## Files
 | files(src/views) | files(src/components) | files(public) | Pages / Block |
 |------------------|-----------------------|---------------|---------------|
 | `Home.vue` | `Pearcafe.vue` | `HomePageNews.json` | 首頁 |
@@ -14,7 +14,7 @@
 | `BlogView.vue` |  | `Blog01.json`,`Blog02.json`,`Blog03.json`,`Blog04.json`,`Blog05.json` | 梨子講座 |
 
 
-## File
+## Files
 - files
   - node_modules
   - public
