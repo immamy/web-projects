@@ -1,6 +1,6 @@
 # Pearcafe
 
-## File
+## Files
 | files | Pages / Block |
 |-------|---------------|
 | `pearcafe.html` | 首頁 |
