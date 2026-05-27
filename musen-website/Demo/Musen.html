@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>慕森設計</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,700,900&display=swap"rel="stylesheeet">
+    <style>
+        @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+        @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,700,900&display=swap");
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        /*========================= 桌機版 =========================*/
+        /* 桌機版 */
+        /* 導覽列 */  /* 桌機版 */
+        .main-header{
+            background-color: #191919;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+        .main-header .container{
+            display: flex;
+            padding: 20px;
+            margin: auto;
+            height: 50px;
+        }
+        .main-header .logo{
+            width: 12%;
+            height: 12%;
+        }
+        .main-header .logo img{
+            width: 12%;
+            vertical-align: left;
+            position: fixed;
+            left: 0;
+            top: 10px;
+        }
+        .main-header .main-nav{
+            margin: auto;
+            display: float;
+            vertical-align: right;
+            position: fixed;
+            right: 0;
+            padding: 15px;
+        }
+        .main-header .main-nav a{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 1em;
+            margin-left: 28.5px;
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .main-header .main-nav a:nth-last-child(1){
+            color: #b8ad9c;
+        }
+        .main-header .main-nav a:hover{
+            color: #b8ad9c;
+            transition: .6s .2s;
+        }
+        .main-header .menu_btn{
+            visibility: hidden;
+        }
+        .main-header .control_logo{
+            visibility: hidden;
+        }
+        .main-header .control_icon{
+            visibility: hidden;
+        }
+        .main-header .control_copyright{
+            visibility: hidden;
+        }
+
+        /* 區塊1 */  /* 桌機版 */
+        .banner1{
+            max-width: 100%;
+            /* height: 503.5px; */
+            height: 850px;
+            background-color: #ccc;
+            background:
+                url("https://musen.com.tw/upload/banner_list/tw_banner_list_19b26_jyqt5q2rvb.jpg") right center / 100% 100%;
+        }
+        .banner1 .container{
+            position: relative;
+        }
+        .banner1 .logo img{
+            width: 10%;
+            position: absolute;
+            top: 325px;
+            left: 733px;
+        }
+        .banner1 .container .word{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 675px;
+            left: 663px;
+            margin: auto;
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .banner1 .container .word p:first-child{
+            margin-left: 10px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: #d9d9d9;
+        }
+        .banner1 .container .word p:first-child::after{
+            content: '';
+            display: block;
+            height: 45px;
+            width: .1px;
+            background-color: #fff;
+            margin: auto;
+            margin-top: 15px;
+            animation: line_move_1 infinite 2.5s;
+            /* animation: line_move_2 2.5s 2.5s; */
+        }
+        @keyframes line_move_1{
+            0%{ height: 0px;
+                visibility: visible;
+            }
+            100%{ height: 45px;
+                visibility: visible;
+            }
+        }
+        @keyframes line_move_2{
+            0%{ height: 45px;
+                visibility: visible; }
+            100%{ height: 0px;
+                visibility: visible; }
+        }
+        .banner1 .container p:nth-child(n+2){
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 12px;
+            letter-spacing: 2px;
+            position: absolute;
+            top: 110px;
+            left: 120px;
+            color: #FFFFFFB3;
+            transition: 1.2s ease;
+        }
+        .banner1 .container p:hover:nth-child(n+2){
+            color: #c6b9a6;
+            font-size: 11px;
+            transition: 1.2s ease;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+        .banner1 .button{
+            width: 70px;
+            height: 105px;
+            position: relative;
+            top: 380px;
+            left: 1510px;
+        }
+        .banner1 .button-triangle{
+            width: 0;
+            height: 0;
+            border-top: 16px solid #000;
+            border-right: 16px solid transparent;
+            transform: rotate(135deg);
+            position: absolute;
+            top: 29px;
+            left: 26px;
+            z-index: 1;
+        }
+        .banner1 .button-circle{
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: block;
+            text-align: center;
+            margin: auto;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background-color: #c6b9a6;
+        }
+        .banner1 .button-circle_dashed{
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            display: block;
+            text-align: center;
+            margin: auto;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: transparent;
+            border: 1px dashed #c6b9a6;
+        }
+        .banner1 .button-word{
+            color: #d9d9d9;
+            text-decoration: none;
+            display: block;
+            margin: auto;
+            text-align: center;
+            position: absolute;
+            top: 90px;
+            left: 12px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        /* 區塊2 */  /* 桌機版 */
+        .banner2{
+            max-width: 100%;
+            height: 960px;
+            background-color: #ccc;
+            background:
+                url("https://musen.com.tw/upload/home_about_list/tw_home_about_list_23b06_sz2cqw5kxs.jpg") right center / 100% 100%;
+        }
+        .banner2 .container{
+            position: relative;
+        }
+        .banner2 .introduction{
+            width: 635px;
+            height: 758.67px;
+            background-color: #000;
+            position: absolute;
+            top: 100px;
+            right: 245px;
+        }
+        .banner2 .title{
+            text-align: center;
+        }
+        .banner2 .title h1{
+            font-size: 45px;
+            color: #DDDDDD;
+            padding: 120px 0 0 0;
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 25;
+        }
+        .banner2 .title h2{
+            font-size: 16px;
+            color: #c0ae9d;
+            padding: 20px 0 0 0;
+            font-weight: 15;
+            line-height: 40px;
+        }
+        .container h2:after{
+            content: '';
+            display: block;
+            height: .1px;
+            width: 250px;
+            background-color: #46423c;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        .banner2 .txt{
+            color: #878787;
+            display: block;
+            margin: auto;
+            padding: 70px 130px 130px 130px;
+            text-align: justify;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        .banner2 .txt p:first-child{
+            color: #DDDDDD;
+        }
+        .banner2 button{
+            width: 220px;
+            height: 48px;
+            display: block;
+            margin: auto;
+            margin-top:-70px;
+            background-color: transparent;
+            color: #c6b9a6;
+            border: dashed 1px #c6b9a6;
+            font-size: 14px;
+        }
+        .banner2 button:hover{
+            background-color: #c6b9a6;
+            color: #000;
+            font-weight: 6;
+            cursor: pointer;
+        }
+        .banner2 a{
+            text-decoration: none;
+        }
+        .banner2 .circle{
+            animation: 30s round linear both infinite;
+            /* animation: background_rotate linear infinite 1s; */
+            /* background: linear-gradient(-20deg, #3f5494, #08c7a5); */
+        }
+        /* @keyframes background_rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        } */
+        .banner2 .circle,
+        .banner2 .circle-img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: #b8ad9c dashed 1px;
+            position: absolute;
+            top: 635px;
+            right: -10px;
+        }
+        .banner2 .circle-img img{
+            position: absolute;
+            width: 50%;
+            top: 35px;
+            right: 35px;
+        }
+
+        /* 區塊3 */  /* 桌機版 */
+        .banner3{
+            max-width: 100%;
+            height: 1300px;
+            background-color: #161616;
+        }
+        .banner3 .container{
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+            max-width: 1170px;
+        }
+        .banner3 h1{
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 50px;
+            font-weight: 14;
+            margin-top: 145px;
+            margin-bottom: 5px;
+            color: #dddddd;
+        }
+        .banner3 h2{
+            font-size: 26px;
+            font-weight: 12;
+            letter-spacing: 3px;
+            margin-bottom: 70px;
+            color: #c5b8a5;
+        }
+        .banner3 h2::after{
+            visibility: hidden;
+        }
+        .banner3 .sec-title{
+            max-width: 100%;
+            display: flex;
+        }
+        .banner3 .sec-title .main-nav{
+            margin: auto;
+            margin-right: 0;
+            margin-top: 10px;
+        }
+        .banner3 .sec-title .main-nav a{
+            text-decoration: none;
+            padding: 5px 1em;
+            margin-left: 28.5px;
+            color: #ccc;
+        }
+        .banner3 .sec-title .main-nav a:hover{
+            color: #c6b9a6;
+            transition: .6s .2s;
+        }
+        .banner3 .sec-title .main-nav a:nth-last-child(1){
+            color: #b8ad9c;
+        }
+        .banner3 .text-block_1{
+            max-width: 100%;
+            height: 505px;
+            /* background-color: #878787; */
+        }
+        .banner3 .text-block_2{
+            max-width: 100%;
+            height: 210px;
+            /* background-color: #fff; */
+        }
+        .banner3 .first-block{
+            max-width: 66.6666%;
+            height: 505px;
+            /* background-color: yellow; */
+            float: left;
+            margin-right: 19px;
+        }
+        .banner3 .first-block .item img{
+            width: 100.6%;
+        }
+        .banner3 .sec-block{
+            max-width: 33.3333%;
+            height: 505px;
+            /* background-color: palevioletred; */
+            float: none;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .banner3 .sec-block .item:first-child{
+            margin-bottom: 10px;
+        }
+        .banner3 .sec-block .item img{
+            height: 99%;
+        }
+        .banner3 .third-block{
+            max-width: 100%;
+            height: 210px;
+            float: left;
+            display: flex;
+            /* background-color: blue; */
+        }
+        .banner3 .third-block .item:nth-child(n+2){
+            margin-left: 15px;
+        }
+        .banner3 .item{
+            float: left;
+            position: relative;
+        }
+        .banner3 .item img{
+            width: 100%;
+            vertical-align: middle;
+            /* border: lightskyblue solid 3px; */
+        }
+        /* .banner3 .item img:hover{
+            background-color: rgba(0, 0, 0, .6);
+            border: #b8ad9c solid 5px;
+        } */
+        .banner3 .item .txt{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 25px;
+            margin-top: 40px;
+            color: #fff;
+            display: none;
+            flex-direction: column;
+            justify-content: flex-end;
+            box-sizing: border-box;
+            visibility: hidden;
+            animation: txt_visible 1s .8s infinite;
+            /* background-color: rgba(0, 0, 0, .6);
+            opacity: 0;
+            transition: opacity 0s; */
+            /* border: #b8ad9c solid 5px; */
+        }
+        .banner3 .item:hover .txt{
+            display: flex;
+            /* opacity: 1; */
+        }
+        .banner3 .item h3{
+            font-size: 14px;
+            font-weight: 10;
+            margin-bottom: 20px;
+            animation: move 1s;
+        }
+        .banner3 .item p{
+            font-size: 22px;
+            line-height: 1.7;
+            margin-bottom: 80px;
+            animation: move .6s .2s;
+        }
+        @keyframes move{
+            0%{ transform: translateY(10px);
+                visibility: visible; }
+            100%{ transform: translateY(0px);
+                visibility: visible; }
+        }
+        @keyframes txt_visible{
+            0%{ visibility: visible; }
+            100%{ visibility: visible; }
+        }
+        .banner3 .button_read{
+            width: 220px;
+            height: 48px;
+            display: block;
+            margin: auto;
+            margin-top:90px;
+            background-color: transparent;
+            color: #c6b9a6;
+            border: dashed 1px #c6b9a6;
+            font-size: 14px;
+        }
+        .banner3 .button_read:hover{
+            background-color: #c6b9a6;
+            color: #000;
+            font-weight: 6;
+            cursor: pointer;
+        }
+        .banner3 a{
+            text-decoration: none;
+        }
+        .banner3 .button_dot{
+            margin-left: 200px;
+            visibility: hidden;
+        }
+
+        /* 區塊4 */  /* 桌機版 */
+        .banner4{
+            max-width: 100%;
+            height: 790px;
+            background-color: #131313;
+        }
+        .banner4 .container{
+            max-width: 100%;
+            max-width: 1170px;
+            margin: auto;
+        }
+        .banner4 .title{
+            text-align: center;
+        }
+        .banner4 h1{
+            font-size: 48px;
+            font-weight: 14;
+            font-family: 'Cormorant Garamond', serif;
+            color: #dddddd;
+        }
+        .banner4 h2{
+            letter-spacing: 2px;
+            font-weight: 24;
+            color: #b9ad9b;
+            margin-top: 10px;
+        }
+        .banner4 h2::after{
+            visibility: hidden;
+        }
+        .banner4 .news{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            margin: auto;
+            margin-top: 60px;
+            /* background-color: #9e9e9e; */
+            position: relative;
+        }
+        .banner4 .item{
+            margin: auto;
+        }
+        .banner4 a{
+            text-decoration: none;
+        }
+        .banner4 h3:hover{
+            color: #c6b9a6;
+        }
+        .banner4 h3{
+            color: #fff;
+            font-size: 21px;
+            font-weight: 14;
+            margin-top: 20px;
+        }
+        .banner4 p{
+            color: #fff;
+        }
+        .banner4 p:first-child{
+            font-size: 13px;
+            font-weight: 14;
+            color: #b2a695;
+            margin-top: 20px;
+        }
+        .banner4 p:nth-child(n+2){
+            font-size: 13px;
+            font-weight: 14;
+            color: #505050;
+            margin-top: 10px;
+        }
+        .banner4 button{
+            width: 220px;
+            height: 48px;
+            display: block;
+            margin: auto;
+            margin-top:50px;
+            background-color: transparent;
+            color: #c6b9a6;
+            border: dashed 1px #c6b9a6;
+            font-size: 14px;
+        }
+        .banner4 button:hover{
+            background-color: #c6b9a6;
+            color: #000;
+            font-weight: 6;
+            cursor: pointer;
+        }
+        .banner4 .circle{
+            animation: 30s round linear both infinite;
+            /* animation: background_rotate linear infinite 1s; */
+            /* background: linear-gradient(-20deg, #3f5494, #08c7a5); */
+        }
+        /* @keyframes background_rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        } */
+        .banner4 .circle,
+        .banner4 .circle-img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: #b8ad9c dashed 1px;
+            position: absolute;
+            top: -60px;
+            left: -80px;
+        }
+        .banner4 .circle-img img{
+            position: absolute;
+            width: 60%;
+            top: 30px;
+            right: 30px;
+        }
+
+        /* 區塊5 */  /* 桌機版 */
+        .banner5{
+            max-width: 100%;
+            height: 614px;
+            background-color: #fff;
+        }
+        .banner5 .container{
+            max-width: 100%;
+            height: 614px;
+            position: relative;
+        }
+        .banner5 .content{
+            width: 50%;
+            height: 614px;
+            background-color: #111110;
+            position: relative;
+        }
+        .banner5 .title{
+            padding: 0px 0px 0px 250px;
+            max-width: 500px;
+        }
+        .banner5 h1{
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 48px;
+            font-weight: 10;
+            color: #dddddd;
+            padding: 50px 0px 0px 0px;
+        }
+        .banner5 h2{
+            font-size: 24px;
+            font-weight: 12;
+            letter-spacing: 6px;
+            color: #a38e7f;
+            padding: 22px 0px 0px 0px;
+        }
+        .banner5 h2::after{
+            visibility: hidden;
+        }
+        .banner5 .introduction{
+            padding: 50px 0px 0px 200px;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 500px;
+            margin: auto;
+            position: relative;
+        }
+        .banner5 .item{
+            width: 200px;
+            height: 20px;
+            position: absolute;
+            color: #fff;
+            margin-top: 0px;
+        }
+        .banner5 .item .pic img{
+            width: 50px;
+            height: 50px;
+        }
+        .banner5 .item:first-child,
+        .banner5 .item:nth-child(n+2){
+            top: 60px;
+        }
+        .banner5 .item:first-child,
+        .banner5 .item:nth-child(n+3){
+            left: 180px;
+        }
+        .banner5 .item:nth-child(n+3),
+        .banner5 .item:nth-child(n+4){
+            top: 220px;
+        }
+        .banner5 .item:nth-child(n+2){
+            right: 80px;
+        }
+        .banner5 .item:nth-child(n+4){
+            left: 420px;
+        }
+        /* .banner5 .item:first-child{
+            top: 60px;
+            left: 180px;
+        }
+        .banner5 .item:nth-child(n+2){
+            top: 60px;
+            right: 80px;
+        }
+        .banner5 .item:nth-child(n+3){
+            top: 220px;
+            left: 180px;
+        }
+        .banner5 .item:nth-child(n+4){
+            top: 220px;
+            left: 420px;
+        } */
+        .banner5 .item p:first-child{
+            padding: 10px 0px 0px 0px;
+            font-size: 17px;
+            letter-spacing: 1px;
+            color: #f0f0f0;
+        }
+        .banner5 .item p:nth-child(n+2){
+            padding: 10px 0px 0px 0px;
+            font-size: 15px;
+            color: #bbbbbb;
+        }
+        .banner5 .img img{
+            width: 50%;
+            position: absolute;
+            right: 0px;
+            bottom: 0px
+        }
+        .banner5 .contact_button{
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            top: 220px;
+            left: 750px;
+        }
+        .banner5 .contact_button .circle_1{
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            width: 180px;
+            height: 180px;
+            border: #c9b8a4 dashed 1px;
+            background-color: transparent;
+            border-radius: 50%;
+            animation: 30s round linear both infinite;
+        }
+        .banner5 .contact_button .circle_2{
+            position: absolute;
+            top: 12px;
+            left: 13px;
+            width: 150px;
+            height: 150px;
+            background-color: #c9b8a4;
+            border-radius: 50%;
+        }
+        .banner5 .contact_button img{
+            width: 45px;
+            height: 45px;
+            position: absolute;
+            top: 40px;
+            left: 65px;
+            border-radius: 50%;
+        }
+        .banner5 .contact_txt p:first-child{
+            position: absolute;
+            top:90px;
+            left: 45px;
+            font-size: 16px;
+        }
+        .banner5 .contact_txt p:nth-child(n+2){
+            position: absolute;
+            top: 116px;
+            left: 60px;
+            font-size: 15px;
+        }
+        @keyframes round{
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0);
+            }
+            100% {
+                -webkit-transform: rotate(1turn);
+                transform: rotate(1turn);
+            }
+        }
+
+        /* 頁尾 */  /* 桌機版 */
+        .main-footer{
+            width: 100%;
+            padding: 25px 20px 50px 20px;
+            background-color: #000;
+        }
+        .main-footer .container{
+            width: 100%;
+            height: 160px;
+            margin: auto;
+            position: relative;
+            max-width: 1230px;
+        }
+        .main-footer .footer-logo-img{
+            width: 415px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+        }
+        .main-footer .footer-logo-img img{
+            width: 87%;
+        }
+        .main-footer .footer-txt{
+            width: 620px;
+            height: 200px;
+            position: absolute;
+            left: 415px;
+            display: flex;
+        }
+        .main-footer .footer-item{
+            padding: 35px 54px 0px 0px;
+            line-height: 2em;
+        }
+        .main-footer .footer-item p:first-child{
+            color: #baa19c;
+        }
+        .main-footer .footer-item p:nth-child(n+2){
+            color: #DDDDDD;
+        }
+        .main-footer .footer-img{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 1035px;
+        }
+        .main-footer .footer-img img{
+            width: 60%;
+            height: 55%;
+            position: absolute;
+            top: 10px;
+        }
+        .main-footer .copyright{
+            width: 100%;
+            height: 19.333px;
+            text-align: center;
+            padding-top: 15px;
+            /* padding: 15px 0; */
+            background-color: #000;
+            color: #9e9e9e;
+            font-size: 13px;
+            position: absolute;
+        }
+
+        /* 頁尾導覽列 */  /* 手機版 */
+        .sec-footer{
+            /* visibility: hidden; */
+            display: none;
+        }
+
+
+        /*========================= RWD 平板版  手機板=========================*/
+        /* 平板版 */
+        @media screen and (max-width:1400px) {
+            /* 導覽列 */  /* 平板版 */
+            #menu_control{
+                /* position: absolute; */
+                z-index: -2;
+                opacity: 0;
+            }
+            .main-header{
+                height: 70px;
+                background-color: #101010;
+                position: relative;
+                position: fixed;
+            }
+            .main-header .logo{
+                margin-left: 320px;
+                background-color: #aaa;
+            }
+            .main-header .logo img{
+                width: 22%;
+                vertical-align: left;
+                left: 320px;
+                top: 0px;
+            }
+            .main-header .menu_btn{
+                width: 40px;
+                height: 40px;
+                background-color: transparent;
+                display: block;
+                position: absolute;
+                top: 5px;
+                right: 15px;
+                z-index: 2;
+                visibility: visible;
+            }
+            .main-header .menu_btn span{
+                opacity: 0;
+                width: 1px;
+                height: 1px;
+                display: block;
+                overflow: hidden;
+            }
+            .main-header .menu_btn::before{
+                content: '';
+                position: absolute;
+                height: 2px;
+                left: 2px;
+                width: 26px;
+                background-color: #aaa;
+                top: 24px;
+                bottom: 0;
+                margin: auto;
+                box-shadow: 0 8px 0 #aaa,
+                            0 -8px 0 #aaa;
+            }
+            .main-header .dashed-block{
+                width: 810px;
+                height: 96.5vh;
+                border: #b8ad9c dashed 1px;
+                position: absolute;
+                z-index: 1;
+                margin: -10px;
+                visibility: hidden;
+            }
+            .main-header .main-nav{
+                width: 100%;
+                height: calc(100vh - 0px);
+                background-color: rgba(24, 24, 24, .95);
+                position: absolute;
+                top: 0px;
+                visibility: hidden;
+            }
+            .main-header .main-nav a{
+                display: block;
+                text-decoration: none;
+                color: #fff;
+                padding: 20px 20px;
+                padding-top: 13px;
+                text-align: center;
+            }
+            .main-header .main-nav a:first-child{
+                margin-top: 175px;
+            }
+            .main-header .main-nav a:last-child{
+                visibility: hidden;
+            }
+            .main-header .control_logo{
+                position: absolute;
+                z-index: 1;
+                top: 50px;
+                left: 350px;
+            }
+            .main-header .control_logo img{
+                width: 65%;
+            }
+            .main-header .control_icon{
+                position: absolute;
+                z-index: 1;
+                width: 145px;
+                top: 540px;
+                left: 340px;
+            }
+            .main-header .control_icon img{
+                width: 110%;
+                border-radius: 50%;
+                /* margin-right: 3px; */
+            }
+            .main-header .control_copyright{
+                position: absolute;
+                z-index: 1;
+                top: 630px;
+                left: 280px;
+                max-width: 280px;
+                text-align: center;
+                color: #545454;
+                font-size: 12px;
+            }
+            #menu_control:checked ~ .main-header .dashed-block,
+            #menu_control:checked ~ .main-header nav,
+            #menu_control:checked ~ .main-header .control_logo,
+            #menu_control:checked ~ .main-header .control_icon,
+            #menu_control:checked ~ .main-header .control_copyright{
+                visibility: visible;
+            }
+
+            /* 區塊1 */  /* 平板版 */
+            .banner1{
+                height: 490px;
+            }
+            .banner1 .logo img{
+                width: 14%;
+                position: absolute;
+                top: 196px;
+                left: 344px;
+            }
+            .banner1 .container .word{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 425px;
+                left: 223px;
+                margin: auto;
+                color: #fff;
+                font-size: 12px;
+                text-align: center;
+                font-family: 'Cormorant Garamond', serif;
+            }
+            .banner1 .container .word p:first-child::after{
+                height: 0;
+                width: 0;
+            }
+            .banner1 .container p:nth-child(n+2){
+                visibility: hidden;
+            }
+            .banner1 .button{
+                width: 70px;
+                height: 105px;
+                position: relative;
+                top: 190px;
+                left: 710px;
+            }
+
+            /* 區塊2 */  /* 平板版 */
+            .banner2 .introduction{
+                width: 635px;
+                height: 758.67px;
+                background-color: #000;
+                position: absolute;
+                top: 100px;
+                /* border: rgba(160, 160, 160, .95) solid .1px; */
+                right: 20px;
+            }
+
+            /* 區塊3 */  /* 平板版 */
+            .banner3{
+                height: 1175px;
+            }
+            .banner3 .container{
+                margin: 0 20px;
+            }
+            .banner3 .sec-title .main-nav{
+                margin-right: -10px;
+            }
+            .banner3 .text-block_1,
+            .banner3 .first-block,
+            .banner3 .sec-block{
+                height: 345px;
+                /* background-color: #878787; */
+            }
+            .banner3 .text-block_2,
+            .banner3 .third-block{
+                height: 169px;
+                /* background-color: #fff; */
+            }
+            .banner3 .first-block{
+                /* background-color: yellow; */
+                margin-right: 10px;
+            }
+            .banner3 .first-block .item img{
+                width: 99%;
+            }
+            /* .banner3 .sec-block{
+                background-color: palevioletred;
+            } */
+            .banner3 .sec-block .item img{
+                height: 95%;
+                width: 100%;
+            }
+            .banner3 .sec-block .item:nth-child(n+1) img{
+                margin-bottom: 4px;
+            }
+            /* .banner3 .third-block{
+                background-color: blue;
+            } */
+            .banner3 .third-block .item img{
+                height: 96%;
+            }
+            .banner3 .first-block .item p{
+                margin-bottom: 90px;
+            }
+            .banner3 .sec-block .item p{
+                margin-bottom: 40px;
+            }
+            .banner3 .third-block .item:first-child p{
+                margin-bottom: 40px;
+            }
+            .banner3 .button_read{
+                margin-top: 85px;
+            }
+            .banner3 .button_dot{
+                margin-left: 200px;
+                visibility: visible;
+            }
+            .banner3 .button_dot .button1_dot,
+            .banner3 .button_dot .button2_dot,
+            .banner3 .button_dot .button3_dot,
+            .banner3 .button_dot .button4_dot,
+            .banner3 .button_dot .button5_dot,
+            .banner3 .button_dot .button6_dot,
+            .banner3 .button_dot .button7_dot,
+            .banner3 .button_dot .button8_dot,
+            .banner3 .button_dot .button9_dot,
+            .banner3 .button_dot .button10_dot,
+            .banner3 .button_dot .button11_dot,
+            .banner3 .button_dot .button12_dot{
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                margin-top: 35px;
+                margin-right: 18px;
+                background-color: rgba(100, 100, 100, .8);
+            }
+            .banner3 .button_dot .button1_dot:hover,
+            .banner3 .button_dot .button2_dot:hover,
+            .banner3 .button_dot .button3_dot:hover,
+            .banner3 .button_dot .button4_dot:hover,
+            .banner3 .button_dot .button5_dot:hover,
+            .banner3 .button_dot .button6_dot:hover,
+            .banner3 .button_dot .button7_dot:hover,
+            .banner3 .button_dot .button8_dot:hover,
+            .banner3 .button_dot .button9_dot:hover,
+            .banner3 .button_dot .button10_dot:hover,
+            .banner3 .button_dot .button11_dot:hover,
+            .banner3 .button_dot .button12_dot:hover{
+                background-color: #c6b9a6;
+                cursor: pointer;
+            }
+            .banner3 .button_dot .button1_dot{
+                background-color: #c6b9a6;
+            }
+
+            /* 區塊4 */  /* 平板版 */
+            .banner4{
+                height: 1355px;
+            }
+            .banner4 h1{
+                font-size: 46px;
+            }
+            .banner4 h2{
+                letter-spacing: 4px;
+                margin-left: 10px;
+            }
+            .banner4 .news{
+                max-width: 800px;
+            }
+            .banner4 .item{
+                width: 30%;
+                height: 30%;
+                margin-top: 0px;
+                margin-left: 0px;
+                margin: 15px;
+                /* background-color: pink; */
+            }
+            .banner4 .item img{
+                width: 100%;
+                height: 100%;
+            }
+            .banner4 h3{
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow:hidden;
+            }
+            .banner4 button{
+                margin-top: -40px;
+            }
+
+            /* 區塊5 */  /* 平板版 */
+            .banner5 .content{
+                width: 100%;
+                /* background-color: #ccc; */
+            }
+            .banner5 .img img{
+                width: 100%;
+                right: 0px;
+                top: 0px;
+                margin-top: -650px;
+            }
+            .banner5 .contact_button{
+                top: -145px;
+                left: 325px;
+            }
+            .banner5 .title{
+                padding: 0px 0px 0px 150px;
+            }
+            .banner5 .item:first-child,
+            .banner5 .item:nth-child(n+3){
+                left: 90px;
+            }
+            .banner5 .item:nth-child(n+2){
+                right: 170px;
+            }
+            .banner5 .item:nth-child(n+4){
+                left: 330px;
+            }
+
+            /* 頁尾 */  /* 平板版 */
+            .main-footer .container{
+                height: 120px;
+            }
+            .main-footer .footer-logo-img{
+                width: 0;
+                height: 0;
+            }
+            .main-footer .footer-txt{
+                left: 20px;
+            }
+            .main-footer .footer-item{
+                padding: 20px 54px 0px 0px;
+            }
+            .main-footer .footer-img{
+                left: 630px;
+            }
+            .main-footer .footer-img img{
+                top: 0px;
+            }
+            .main-footer .copyright{
+                margin-left: -45px;
+            }
+        }
+
+        /* 手機版 */
+        @media screen and (max-width:768px) {
+            /* 導覽列 */  /* 手機版 */
+            .main-header .logo{
+                margin-left: 220px;
+                background-color: #aaa;
+            }
+            .main-header .logo img{
+                width: 40%;
+                vertical-align: left;
+                left: 140px;
+                top: 0px;
+            }
+            .main-header .dashed-block{
+                width: 455px;
+                height: 96.5vh;
+                border: #b8ad9c dashed 1px;
+                position: absolute;
+                z-index: 1;
+                margin: -10px;
+                /* visibility: hidden; */
+            }
+            .main-header .control_logo{
+                position: absolute;
+                z-index: 1;
+                top: 50px;
+                left: 178px;
+            }
+            .main-header .control_icon{
+                position: absolute;
+                z-index: 1;
+                width: 145px;
+                top: 540px;
+                left: 165px;
+            }
+            .main-header .control_copyright{
+                position: absolute;
+                z-index: 1;
+                top: 630px;
+                left: 100px;
+                max-width: 280px;
+                text-align: center;
+                color: #545454;
+                font-size: 12px;
+            }
+
+            /* 區塊1 */  /* 手機版 */
+            .banner1{
+                height: 330px;
+            }
+            .banner1 .logo img{
+                visibility: hidden;
+            }
+            .banner1 .container .word{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 185px;
+                left: 73px;
+                margin: auto;
+                color: #fff;
+                font-size: 12px;
+                text-align: center;
+                font-family: 'Cormorant Garamond', serif;
+            }
+            .banner1 .container .word p:first-child{
+                font-size: 21px;
+            }
+            .banner1 .button{
+                width: 70px;
+                height: 105px;
+                position: relative;
+                top: 120px;
+                left: 385px;
+            }
+
+            /* 區塊2 */  /* 手機版 */
+            .banner2{
+                height: 700px;
+            }
+            .banner2 .introduction{
+                /* border: rgba(160, 160, 160, .95) solid .1px; */
+                width: 430px;
+                height: 590px;
+                position: absolute;
+                top: 50px;
+                left: 20px;
+                background-color: #0f0f0f;
+            }
+            .banner2 .title h1{
+                padding: 55px 0 0 0;
+                font-size: 27px;
+            }
+            .banner2 .title h2{
+                padding: 10px 0 0 0;
+            }
+            .banner2 .txt{
+                padding: 55px 30px 0px 30px;
+            }
+            .banner2 .txt p:first-child{
+                padding-bottom: 10px;
+            }
+            .banner2 button{
+                margin-top: 70px;
+            }
+            .banner2 .circle,
+            .banner2 .circle-img{
+                width: 150px;
+                height: 150px;
+                top: 465px;
+                right: -20px;
+            }
+
+            /* 區塊3 */  /* 手機版 */
+            .banner3{
+                height: 685px;
+                /* background-color: #878787; */
+            }
+            .banner3 h1{
+                text-align: center;
+                margin-top: 62px;
+                margin-bottom: 6px;
+                font-size: 28px;
+                letter-spacing: 1px;
+            }
+            .banner3 h2{
+                text-align: center;
+                font-size: 24px;
+            }
+            .banner3 .sec-title{
+                display: block;
+            }
+            .banner3 .sec-title .main-nav{
+                margin-top: -40px;
+                /* background-color: #000; */
+                text-align: center;
+                margin-right: 0px;
+            }
+            .banner3 .sec-title .main-nav a{
+                margin-left: 0px;
+                font-size: 16px;
+            }
+            .banner3 .sec-title .main-nav a:nth-child(2){
+                margin: 0 10px;
+            }
+            .banner3 .first-block{
+                max-width: 100%;
+                height: 276px;
+                /* background-color: yellow; */
+                margin-right: 0px;
+                margin-top: 45px;
+            }
+            .banner3 .first-block .item img:first-child{
+                visibility: visible;
+            }
+            .banner3 .item img{
+                visibility: hidden;
+            }
+            .banner3 .first-block .item img{
+                width: 100%;
+            }
+            .banner3 .first-block .item:first-child:hover .txt{
+                display: flex;
+            }
+            .banner3 .item:hover .txt{
+                display: none;
+            }
+            .banner3 .third-block{
+                width: 0;
+                height: 0;
+            }
+            .banner3 .button_read{
+                margin-top: -240px;
+            }
+            .banner3 .button_dot{
+                visibility: hidden;
+            }
+
+            /* 區塊4 */  /* 手機版 */
+            .banner4{
+                height: 950px;
+            }
+            .banner4 h1{
+                font-size: 28px;
+            }
+            .banner4 h2{
+                margin-top: 8px;
+                margin-left: 0px;
+            }
+            .banner4 .news{
+                max-width: 450px;
+                height: 265px;
+                /* background-color: blueviolet; */
+            }
+            .banner4 .item{
+                width: 43%;
+                height: 43%;
+            }
+            .banner4 .item:last-child{
+                width: 0;
+                height: 0;
+                background-color: #545454;
+            }
+            .banner4 .item:last-child p{
+                display: none;
+                background-color: #9e9e9e;
+            }
+            .banner4 h3{
+                font-size: 18px;
+                margin-top: 5px;
+            }
+            .banner4 p:first-child{
+                margin-top: 14px;
+            }
+            .banner4 p:nth-child(n+2){
+                margin-top: 6px;
+            }
+            .banner4 .circle,
+            .banner4 .circle-img{
+                top: -20px;
+            }
+            .banner4 button{
+                margin-top: 40px;
+            }
+            /* 區塊5 */  /* 手機版 */
+            .banner5{
+                height: 530px;
+            }
+            .banner5 .content{
+                height: 560px;
+            }
+            .banner5 .img img{
+                margin-top: -400px;
+            }
+            .banner5 .contact_button{
+                top: -137px;
+                left: 155px;
+            }
+            .banner5 .title{
+                max-width: 450px;
+                padding: 0px 0px 0px 15px;
+                text-align: center;
+            }
+            .banner5 h1{
+                font-size: 28px;
+            }
+            .banner5 .item{
+                width: 400px;
+            }
+            .banner5 .item:first-child,
+            .banner5 .item:nth-child(3){
+                left: 15px;
+            }
+            .banner5 .item:nth-child(2),
+            .banner5 .item:nth-child(4){
+                left: 240px;
+            }
+
+            /* 頁尾 */  /* 手機版 */
+            .main-footer .container{
+                height: 340px;
+            }
+            .main-footer .footer-txt{
+                display: block;
+                text-align: center;
+                max-width: 430px;
+            }
+            .main-footer .footer-item{
+                padding: 5px 54px 0px 0px;
+            }
+            .main-footer .footer-item:first-child{
+                padding-top: 30px;
+            }
+            .main-footer .footer-item p:first-child{
+                margin-bottom: -5px;
+            }
+            .main-footer .footer-img{
+                left: 155px;
+                bottom: -80px;
+            }
+            .main-footer .copyright{
+                height: 90px;
+                padding-left: 30px;
+            }
+
+            /* 頁尾導覽列 */  /* 手機版 */
+            .sec-footer{
+                display: block;
+                width: 100%;
+                background-color: #000;
+                position: fixed;
+                bottom: 0px;
+                border-top: yellowgreen solid 1px;
+            }
+            .sec-footer .sec-nav{
+                padding-top: 10px;
+                padding-bottom: 5px;
+            }
+            .sec-footer .sec-nav img{
+                margin-left: 70px;
+                width: 5%;
+            }
+            .sec-footer .sec-nav a:nth-child(1) img{
+                width: 6%;
+            }
+            .sec-footer .sec-nav a:nth-child(3) img{
+                width: 4%;
+            }
+            .sec-footer .sec-nav a:nth-child(4) img{
+                width: 6%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 導覽列 -->
+    <input type="checkbox" name="" id="menu_control">
+    <div class="main-header">
+        <div class="container">
+            <a href="#" class="logo">
+                <!-- <img src="musen_logo.png" alt="Musen | 慕森設計"> -->
+                <img src="https://i.postimg.cc/vTLMv7SD/musen-logo.png" alt="Musen | 慕森設計">
+            </a>
+            <label for="menu_control" class="menu_btn">
+                <span>選單</span>
+            </label>
+            <div class="dashed-block"></div>
+            <div class="control_logo">
+                <!-- <img src="musen_logo_5.png" alt="Musen | 慕森設計"> -->
+                <img src="https://i.postimg.cc/gJ3PYqp4/musen-logo-5.png" alt="Musen | 慕森設計">
+            </div>
+            <div class="control_icon">
+                <!-- <img src="https://picsum.photos/30/30?random=1">
+                <img src="https://picsum.photos/30/30?random=2">
+                <img src="https://picsum.photos/30/30?random=3">
+                <img src="https://picsum.photos/30/30?random=4"> -->
+                <!-- <img src="ICON_6.png" alt="Musen | 慕森設計"> -->
+                <img src="https://i.postimg.cc/XJ3bQjpQ/ICON-6.png" alt="Musen | 慕森設計">
+            </div>
+            <div class="control_copyright">
+                COPYRIGHT &copy; Mu Space Design. All Right Resrved.
+                網頁設計‧ iBest
+            </div>
+            <nav class="main-nav">
+                <a href="#">關於慕森</a>
+                <a href="#">作品瀏覽</a>
+                <a href="#">流程介紹</a>
+                <a href="#">新鮮事</a>
+                <a href="#">聯絡我們</a>
+                <a href="#">交通位置</a>
+                <a href="#"><i class="fa fa-facebook-f"></i> FACEBOOK</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 區塊1 -->
+    <div class="banner1">
+        <div class="container">
+            <a href="#" class="logo">
+                <!-- <img src="musen_logo_2.png" alt="Musen | 慕森設計"> -->
+                <img src="https://i.postimg.cc/ZYrTZZKZ/musen-logo-2.png" alt="Musen | 慕森設計">
+            </a>
+            <div class="word">
+                <p>藝術融入生活，創造屬於自己的劇本</p>
+                <p>SCROLL DOWN</p>
+            </div>
+            <div class="button">
+                <p class="button-triangle"></p>
+                <a href="#" class="button-circle_dashed"></a>
+                <a href="#" class="button-circle" alt="開啟影片"></a>
+                <a href="#" class="button-word" alt="開啟影片">VIDEO</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 區塊2 -->
+    <div class="banner2">
+        <div class="container">
+            <div class="introduction">
+                <div class="title">
+                    <h1>MUSEN DESIGN</h1>
+                    <h2>藝術融入生活, 創造屬於自己的劇本</h2>
+                </div>
+                <div class="txt">
+                    <p>為了使每個空間有獨特性，我們將每件作品都賦予專屬的故事，更希望的是，能讓每位業主感受到空間中的每個角落，都是專屬於他/她的劇本，以創新突破跳脫傳統框架格局，在實用與美學上找出平衡點。</p>
+                    <br>
+                    <p>Thus making every space substantially different from another, they inspire us to create a unique story for our work. We would like our customers feel the script that reflects the characteristics of them.</p>
+                </div>
+                <a href="#"><button>READ MORE</button></a>
+                <div class="circle"></div>
+                <div class="circle-img">
+                    <!-- <img src="musen_logo_3.PNG"> -->
+                    <img src="https://i.postimg.cc/NfDB94Hz/musen-logo-3.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 區塊3 -->
+    <div class="banner3">
+        <div class="container">
+            <div class="title">
+                <h1>OUR PORTFOLIO</h1>
+                <div class="sec-title">
+                    <h2>慕森精選作品</h2>
+                    <nav class="main-nav">
+                        <a href="#">商業空間</a>
+                        <a href="#">住宅空間</a>
+                        <a href="#">所有設計</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="text-block_1">
+                <div class="first-block">
+                    <div class="item">
+                        <a href="#"><img src="https://musen.com.tw/upload/catalog_list_pic/tw_catalog_list_24d17_6p5dappu6m.jpg"></a>
+                        <div class="txt">
+                            <h3>住宅空間</h3>
+                            <p>女王萬歲-Tipsy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec-block">
+                    <div class="item">
+                        <a href="#"><img src="https://musen.com.tw/upload/catalog_list_pic/tw_catalog_list_24c20_ym9zk4byi6.jpg"></a>
+                        <div class="txt">
+                            <h3>商業空間</h3>
+                            <p>風格創業空間-耘角創意藝術塗料</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="https://musen.com.tw/upload/catalog_list_pic/tw_catalog_list_24b28_de55ytscwt.jpg"></a>
+                        <div class="txt">
+                            <h3>商業空間</h3>
+                            <p>風格商業空間-寓見良品</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-block_2">
+                <div class="third-block">
+                    <div class="item">
+                        <a href="#"><img src="https://musen.com.tw/upload/catalog_list_pic/tw_catalog_list_24a26_uabqstzh34.jpg"></a>
+                        <div class="txt">
+                            <h3>商業空間</h3>
+                            <p>風格商業空間-甜點店-草町商號</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="https://musen.com.tw/upload/catalog_list_pic/tw_catalog_list_23l22_sxnxnjwu8y.jpg"></a>
+                        <div class="txt">
+                            <h3>住宅空間</h3>
+                            <p>美村山脈-默墨</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="https://musen.com.tw/upload/catalog_list_pic/tw_catalog_list_23k01_ikmr974rvk.jpg"></a>
+                        <div class="txt">
+                            <h3>商業空間</h3>
+                            <p>獨棟民宿-兩人侘</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button_dot">
+                <a href="#"><button class="button1_dot"></button></a>
+                <a href="#"><button class="button2_dot"></button></a>
+                <a href="#"><button class="button3_dot"></button></a>
+                <a href="#"><button class="button4_dot"></button></a>
+                <a href="#"><button class="button5_dot"></button></a>
+                <a href="#"><button class="button6_dot"></button></a>
+                <a href="#"><button class="button7_dot"></button></a>
+                <a href="#"><button class="button8_dot"></button></a>
+                <a href="#"><button class="button9_dot"></button></a>
+                <a href="#"><button class="button10_dot"></button></a>
+                <a href="#"><button class="button11_dot"></button></a>
+                <a href="#"><button class="button12_dot"></button></a>
+            </div>
+            <a href="#"><button class="button_read">READ MORE</button></a>
+        </div>
+    </div>
+
+    <!-- 區塊4 -->
+    <div class="banner4">
+        <div class="container">
+            <div class="title">
+                <h1>LATEST NEWS</h1>
+                <h2>最新消息</h2>
+            </div>
+            <div class="news">
+                <div class="circle"></div>
+                <div class="circle-img">
+                    <!-- <img src="musen_logo_3.PNG"> -->
+                    <img src="https://i.postimg.cc/NfDB94Hz/musen-logo-3.png">
+                </div>
+                <div class="item">
+                    <div class="item-title">
+                        <a href="#" calss="item-img">
+                            <img src="https://musen.com.tw/upload/news_list_pic/tw_news_list_20d30_p66rnrs8z4.jpg">
+                            <h3>靜砌榮獲2020A'DESIGN AWARD鐵獎</h3>
+                        </a>
+                    </div>
+                    <div class="item-txt">
+                        <p>慕森快訊</p>
+                        <p>Apr 30, 2020</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-title">
+                        <a href="#" calss="item-img">
+                            <img src="https://musen.com.tw/upload/news_list_pic/tw_news_list_19f26_7bf7s4gq7f.jpg">
+                            <h3>Attitude Interior Design Magazine...</h3>
+                        </a>
+                    </div>
+                    <div class="item-txt">
+                        <p>媒體報導</p>
+                        <p>Apr 26, 2019</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-title">
+                        <a href="#" calss="item-img">
+                            <img src="https://musen.com.tw/upload/news_list_pic/tw_news_list_19f14_qge4t32m4k.jpg">
+                            <h3>美國Interior Design Magazine報導</h3>
+                        </a>
+                    </div>
+                    <div class="item-txt">
+                        <p>媒體報導</p>
+                        <p>Jun 14, 2019</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#"><button>READ MORE</button></a>
+        </div>
+    </div>
+
+    <!-- 區塊5 -->
+    <div class="banner5">
+        <div class="container">
+            <div class="content">
+                <div class="title">
+                    <h1>We Aim to blend arts gently in daily life</h1>
+                    <h2>品牌特色</h2>
+                </div>
+                <div class="introduction">
+                    <div class="item">
+                        <div class="pic">
+                            <!-- <img src="https://picsum.photos/42/42/?random=1"> -->
+                            <!-- <img src="ICON_1.PNG"> -->
+                            <img src="https://i.postimg.cc/VNJrmFR3/ICON-1.png">
+                        </div>
+                        <div class="txt">
+                            <p>整合整體空間及風格</p>
+                            <p>Space Style</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pic">
+                            <!-- <img src="https://picsum.photos/42/42/?random=2"> -->
+                            <!-- <img src="ICON_2.PNG"> -->
+                            <img src="https://i.postimg.cc/sXFXyC1h/ICON-2.png">
+                        </div>
+                        <div class="txt">
+                            <p>專業運用各項建材</p>
+                            <p>Professional</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pic">
+                            <!-- <img src="https://picsum.photos/42/42/?random=3"> -->
+                            <!-- <img src="ICON_3.PNG"> -->
+                            <img src="https://i.postimg.cc/hj9GtZ73/ICON-3.png">
+                        </div>
+                        <div class="txt">
+                            <p>有效率的統籌工班</p>
+                            <p>Effciency</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pic">
+                            <!-- <img src="https://picsum.photos/42/42/?random=4"> -->
+                            <!-- <img src="ICON_4.PNG"> -->
+                            <img src="https://i.postimg.cc/4yPNzKP6/ICON-4.png">
+                        </div>
+                        <div class="txt">
+                            <p>清楚掌控施工品質</p>
+                            <p>Quality</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img">
+                <img src="	https://musen.com.tw/images/home/characteristicImg.jpg">
+            </div>
+            <div class="contact_button">
+                <a href="#" class="circle_1"></a>
+                <a href="#" class="circle_2"></a>
+                <!-- <img src="https://picsum.photos/40/40/?random=5"> -->
+                <!-- <img src="ICON_5.PNG"> -->
+                <img src="https://i.postimg.cc/vBLQs1pJ/ICON-5.png">
+                <div class="contact_txt">
+                    <p>CONTACT US</p>
+                    <p>聯絡我們</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 頁尾 -->
+    <div class="main-footer">
+        <div class="container">
+            <div class="footer-logo-img">
+                <a href="#" class="logo">
+                    <!-- <img src="musen_logo_4.png" alt="Musen | 慕森設計"> -->
+                    <img src="https://i.postimg.cc/4x3Zz9vN/musen-logo-4.png" alt="Musen | 慕森設計">
+                </a>
+            </div>
+            <div class="footer-txt">
+                <div class="footer-item">
+                    <p>PHONE</p>
+                    <p>04-2376-1186</p>
+                </div>
+                <div class="footer-item">
+                    <p>EMAIL</p>
+                    <p>musen816@gmail.com</p>
+                </div>
+                <div class="footer-item">
+                    <p>ADDRESS</p>
+                    <p>403台中市西區民興街181號</p>
+                </div>
+            </div>
+            <div class="footer-img">
+                <a href="#" class="img">
+                    <!-- <img src="IF_DESIGN_Black.png"> -->
+                    <img src="https://i.postimg.cc/W4hNPktf/IF-DESIGN-Black.png">
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            COPYRIGHT &copy; Mu Space Design. All Right Resrved.
+            網頁設計‧ iBest
+        </div>
+    </div>
+
+    <!-- 頁尾導覽列(手機板) -->
+    <div class="sec-footer">
+        <div class="container">
+            <nav class="sec-nav">
+                <!-- <a href="#"><img src="footer-icon_1.PNG"></a>
+                <a href="#"><img src="footer-icon_2.PNG"></a>
+                <a href="#"><img src="footer-icon_3.PNG"></a>
+                <a href="#"><img src="footer-icon_4.PNG"></a> -->
+                <a href="#"><img src="https://i.postimg.cc/jS5C4hGL/footer-icon-1.png"></a>
+                <a href="#"><img src="https://i.postimg.cc/DfrWv0ry/footer-icon-2.png"></a>
+                <a href="#"><img src="https://i.postimg.cc/7Yq5f491/footer-icon-3.png"></a>
+                <a href="#"><img src="https://i.postimg.cc/FsG7S6CM/footer-icon-4.png"></a>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
