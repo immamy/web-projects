@@ -1,0 +1,538 @@
+<template>
+    <!-- 切換列 -->
+    <input type="checkbox" name="" id="menu_control">
+    <div class="header" :class="{'scrolled': isScrolled}">
+        <div class="container">
+            <div class="logo">
+                <!-- <a href="pearcafe.html"><img src="home-page-logo.png" alt=""></a> -->
+                <!-- <a href="pearcafe.html"><img src="https://i.postimg.cc/520SFkbC/home-page-logo.png" alt=""></a> -->
+                <router-link to="/">
+                    <!-- <img src="home-page-logo.png" alt="" /> -->
+                    <!-- <img src="https://i.postimg.cc/520SFkbC/home-page-logo.png" alt="" /> -->
+                    <img src="https://www.pearcafe.com.tw/tem/images/logo.svg" alt="" />
+               </router-link>
+            </div>
+            <label for="menu_control" class="menu_btn">
+                <span>選單</span>
+            </label>
+            <div class="dashed-block"></div>
+            <div class="switch-btn">
+                <router-link :to="{ name: 'About' }">關於我們</router-link>
+                <router-link :to="{ name: 'Store' }">分店資訊</router-link>
+                <router-link :to="{ name: 'Menu' }">梨子菜單</router-link>
+                <router-link :to="{ name: 'News' }">活動快遞</router-link>
+                <router-link :to="{ name: 'Service' }">提供服務</router-link>
+                <router-link :to="{ name: 'Blog' }">梨子講座</router-link>
+                <!-- <a href="pearcafe-about-1.html">關於我們</a>
+                <a href="pearcafe-store.html">分店資訊</a>
+                <a href="pearcafe-menu.html">梨子菜單</a>
+                <a href="pearcafe-news-1.html">活動快遞</a>
+                <a href="pearcafe-service.html">提供服務</a>
+                <a href="pearcafe-blog-1.html">梨子講座</a> -->
+                <a href="#">嚴選好物</a>
+                <a href="#">儲值查詢</a>
+            </div>
+            <div class="btn">
+                <a href="#"><button>數位會員</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <router-view/>
+
+
+    <!-- 頁尾 -->
+    <div class="footer">
+        <div class="container">
+            <div class="main-title">
+                <router-link :to="{ name: 'About' }"><p>關於我們</p></router-link>
+                <router-link :to="{ name: 'Store' }"><p>分店資訊</p></router-link>
+                <router-link :to="{ name: 'Menu' }"><p>梨子菜單</p></router-link>
+                <router-link :to="{ name: 'News' }"><p>活動快遞</p></router-link>
+                <router-link :to="{ name: 'Service' }"><p>提供服務</p></router-link>
+                <router-link :to="{ name: 'Blog' }"><p>梨子講座</p></router-link>
+                <!-- <a href="pearcafe-about-1.html"><p>關於我們</p></a>
+                <a href="pearcafe-store.html"><p>分店資訊</p></a>
+                <a href="pearcafe-menu.html"><p>梨子菜單</p></a>
+                <a href="pearcafe-news-1.html"><p>活動快遞</p></a>
+                <a href="pearcafe-service.html"><p>提供服務</p></a>
+                <a href="pearcafe-blog-1.html"><p>梨子講座</p></a> -->
+                <a href="#"><p>嚴選好物</p></a>
+                <a href="#"><p>儲值查詢</p></a>
+            </div>
+            <div class="icon-pic">
+                <!-- <a href="https://www.facebook.com/pearcafe1999/" target="_blank"><img src="home-page-icon-social.png" alt=""></a> -->
+                <!-- <a href="https://page.line.me/xat.0000133697.it0?openQrModal=true" target="_blank"><img src="home-page-icon-line.png" alt=""></a> -->
+                <!-- <a href="https://www.instagram.com/pearcafe1999/#" target="_blank"><img src="home-page-icon-instagram.png" alt=""></a> -->
+                <!-- <a href="https://www.youtube.com/channel/UC_-fZzCqSMSjdraFM-A3Vow?view_as=subscriber&themeRefresh=1" target="_blank"><img src="home-page-icon-youtube.png" alt=""></a> -->
+                <!-- <a href="https://www.ubereats.com/tw/store/%E6%A2%A8%E5%AD%90%E5%92%96%E5%95%A1%E9%A4%A8-%E5%B4%87%E5%BE%B7%E5%BA%97/abub6CCoTyePFluDcTr1-w" target="_blank"><img src="home-page-icon-UberEats.png" alt=""></a> -->
+                <!-- <a href="#"><img src="home-page-icon-email.png" alt=""></a> -->
+                <a href="https://www.facebook.com/pearcafe1999/" target="_blank"><img src="https://i.postimg.cc/FK5zzB9h/home-page-icon-social.png" alt=""></a>
+                <a href="https://page.line.me/xat.0000133697.it0?openQrModal=true" target="_blank"><img src="https://i.postimg.cc/kGdLtW26/home-page-icon-line.png" alt=""></a>
+                <a href="https://www.instagram.com/pearcafe1999/#" target="_blank"><img src="https://i.postimg.cc/hGL0tygJ/instagram.png" alt=""></a>
+                <a href="https://www.youtube.com/channel/UC_-fZzCqSMSjdraFM-A3Vow?view_as=subscriber&themeRefresh=1" target="_blank"><img src="https://i.postimg.cc/Gh9w54tZ/home-page-icon-youtube.png" alt=""></a>
+                <a href="https://www.ubereats.com/tw/store/%E6%A2%A8%E5%AD%90%E5%92%96%E5%95%A1%E9%A4%A8-%E5%B4%87%E5%BE%B7%E5%BA%97/abub6CCoTyePFluDcTr1-w" target="_blank"><img src="https://i.postimg.cc/63Y6CFbR/home-page-icon-Uber-Eats.png" alt=""></a>
+                <a href="#"><img src="https://i.postimg.cc/mcRR3bgF/email.png" alt=""></a>
+            </div>
+            <div class="tel-block">
+                <div class="tel-block-1">
+                    <div class="branches">
+                        <p>豐原店</p>
+                    </div>
+                    <div class="phone">
+                        <p>04-2527-6799</p>
+                    </div>
+                    <div class="time">
+                        <p>營業時間: 08:00-21:00</p>
+                    </div>
+                </div>
+                <div class="tel-block-2">
+                    <div class="branches">
+                        <p>崇德店</p>
+                    </div>
+                    <div class="phone">
+                        <p>04-2249-0399</p>
+                    </div>
+                    <div class="time">
+                        <p>營業時間: 09:00-21:00</p>
+                    </div>
+                </div>
+                <div class="tel-block-3">
+                    <div class="branches">
+                        <p>東海森林店</p>
+                    </div>
+                    <div class="phone">
+                        <p>04-2358-0499</p>
+                    </div>
+                    <div class="time">
+                        <p>營業時間: 09:00-21:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; Da-vinci Co.,Ltd. All Right Resrved.</p>
+                <p>Da-vinci 網頁設計</p>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        data() {
+            return {
+                isScrolled: false, // 用來控制是否滾動過
+            };
+        },
+        mounted() {
+            // 監聽滾動事件
+            window.addEventListener("scroll", this.handleScroll);
+        },
+        beforeDestroy() {
+            // 在組件銷毀時移除事件監聽器
+            window.removeEventListener("scroll", this.handleScroll);
+        },
+        methods: {
+            handleScroll() {
+                // 當頁面滾動距離大於 50px 時，改變背景顏色
+                if (window.scrollY > 50) {
+                    this.isScrolled = true;
+                } else {
+                    this.isScrolled = false;
+                }
+            },
+        },
+    };
+</script>
+
+<style>
+    #app {
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+    }
+    /* 當滾動時改變背景顏色 */
+    .header.scrolled {
+        height: 55px;
+        background-color: rgba(120, 120, 120, 0.8);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease; /* 平滑過渡效果 */
+    }
+    .header.scrolled .switch-btn {
+        right: 130px;
+        top: -15px;
+    }
+    .header.scrolled button {
+        width: 110px;
+        height: 55px;
+    }
+    .header.scrolled .logo {
+        /* width: 50px; */
+        top: 10px;
+        left: 15px;
+    }
+    .header.scrolled .logo img{
+        /* width: 55px; */
+        width: 100px;
+    }
+    .header{
+        width: 100%;
+        height: 85px;
+        position: relative;
+        background-color: rgba(150, 150, 150, 0.5);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        z-index: 2;
+    }
+    .header .container{
+        display: flex;
+        position: relative;
+    }
+    .header .logo{
+        /* width: 80px; */
+        position: absolute;
+        top: 10px;
+        left: 50px;
+    }
+    .header .logo img{
+        /* width: 80px; */
+        /* border: 1px solid #eee; */
+        width: 180px;
+    }
+    .header .switch-btn{
+        padding: 30px 40px;
+        position: absolute;
+        right: 160px;
+        top: 5px;
+    }
+    .header .switch-btn a{
+        padding: 0px 13px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 19px;
+    }
+    .header .switch-btn a:hover{
+        color: #95b04a;
+        transition: 0.5s 0s;
+    }
+    .header .btn{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    .header button{
+        width: 150px;
+        height: 60px;
+        background-color: #8eb135;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .header button:hover{
+        background-color: rgba(214, 201, 175, 100%);
+        cursor: pointer;
+        transition: 0.5s 0s;
+    }
+    .footer{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .footer .main-title{
+        width: 100%;
+        display: flex;
+        justify-content: left;
+    }
+    .footer .main-title p{
+        padding: 35px 25px;
+    }
+    .footer .main-title a{
+        text-decoration: none;
+        color: #000;
+    }
+    .footer .main-title a:hover{
+        color: #8eb135;
+        transition: 0.5s 0s;
+    }
+    .footer .icon-pic{
+        display: flex;
+        justify-content: left;
+        padding-left: 15px;
+        margin-bottom: 30px;
+    }
+    .footer .icon-pic img{
+        width: 30px;
+        padding: 10px 20px;
+    }
+    .footer .tel-block{
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+        top: 0;
+        display: flex;
+        justify-content: right;
+        padding: 30px 0;
+    }
+    .footer .tel-block-1, .footer .tel-block-2, .footer .tel-block-3{
+        padding: 10px 40px;
+        text-align: left;
+    }
+    .footer .branches{
+        font-weight: 800;
+    }
+    .footer .phone{
+        color: #8eb135;
+        font-size: 24px;
+    }
+    .footer .time{
+        color: #7e7d7b;
+        font-size: 14px;
+    }
+    .footer .tel-block p{
+        padding-bottom: 5px;
+    }
+    .footer .copyright{
+        height: 30px;
+        color: #7e7d7b;
+        font-size: 14px;
+        padding: 10px 10px;
+        background-color: #f9f6f2;
+        display: flex;
+    }
+    .footer .copyright p{
+        position: absolute;
+        bottom: 15px;
+    }
+    .footer .copyright p:first-child{
+        position: absolute;
+        left: 20px;
+    }
+    .footer .copyright p:last-child{
+        position: absolute;
+        right: 10px;
+    }
+    /* 平板版（寬度小於 1400px） */
+    @media screen and (max-width:1400px) {
+        .header.scrolled {
+            height: 65px;
+        }
+        .header.scrolled .switch-btn {
+            width: 71%;
+            top: 5px;
+            left: 80px;
+        }
+        .header.scrolled .switch-btn a{
+            padding: 0px 10px;
+            line-height: 1.5em;
+        }
+        .header {
+            height: 70px;
+        }
+        .header .logo {
+            left: 15px;
+        }
+        .header .logo img {
+            width: 150px;
+        }
+        .header .switch-btn {
+            width: 65%;
+            text-align: right;
+            left: 140px;
+            padding-top: 5px;
+        }
+        .header .switch-btn a{
+            font-size: 16px;
+        }
+        .header button{
+            width: 100px;
+            height: 50px;
+            font-size: 16px;
+            font-weight: 100;
+        }
+        .footer {
+            height: 330px;
+        }
+        .footer .main-title {
+            justify-content: center;
+        }
+        .footer .main-title p{
+            padding: 25px 20px;
+        }
+        .footer .icon-pic{
+            justify-content: center;
+            padding-left: 0px;
+        }
+        .footer .icon-pic img{
+            padding: 10px 15px;
+        }
+        .footer .tel-block{
+            justify-content: center;
+            top: 120px;
+        }
+        .footer .copyright{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+        .footer .copyright p:first-child{
+            left: 10px;
+        }
+        .footer .copyright p:last-child{
+            right: 30px;
+        }
+    }
+    /* 設定checkBox樣式(不顯示) */
+    #menu_control{
+        position: absolute;
+        opacity: 0;
+    }
+    /* 設定選單按鈕樣式(不顯示) */
+    .header .menu_btn span{
+        opacity: 0;
+    }
+    /* 手機版（寬度小於 768px） */
+    @media screen and (max-width: 768px) {
+        .header.scrolled {
+            height: 50px;
+        }
+        .header.scrolled .switch-btn {
+            width: 90px;
+            display: flex;
+            flex-wrap: wrap;
+            top: 49px;
+            left: 158px;
+        }
+        .header.scrolled .switch-btn a {
+            padding-bottom: 22.3px;
+        }
+        .header {
+            height: 55px;
+        }
+        /* 導覽列 */  /* 手機版 */
+        /* 設定選單按鈕位置 */
+        .header .menu_btn{
+            width: 30px;
+            height: 30px;
+            background-color: #8eb135;
+            border-radius: 10%;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            visibility: visible;
+        }
+        /* 設定選單按鈕樣式 */
+        .header .menu_btn::before{
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 2px;
+            top: 15px;
+            left: 6px;
+            bottom: 0px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 -16px 0 white,
+                        0 -8px 0 white;
+        }
+        /* 設定選單背景樣式 */
+        .header .dashed-block{
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            z-index: -1;
+            visibility: hidden;
+            background-color: rgba(20, 20, 20, 0.8);
+        }
+        /* 設定選單顯示 */
+        #menu_control:checked ~ .header .dashed-block,
+        #menu_control:checked ~ .header .switch-btn,
+        #menu_control:checked ~ .header .btn {
+            visibility: visible;
+        }
+        /* 設定選單隱藏 */
+        .header .switch-btn{
+            visibility: hidden;
+        }
+        .header .btn{
+            visibility: hidden;
+        }
+        /* 設定選單樣式 */
+        .header .logo img {
+            width: 100px;
+        }
+        .header .switch-btn {
+            width: 90px;
+            display: flex;
+            flex-wrap: wrap;
+            top: 50px;
+            left: 155px;
+        }
+        .header .switch-btn a {
+            padding-bottom: 25px;
+        }
+        .header .btn {
+            top: 400px;
+            padding: 15px;
+            padding-top: 35px;
+        }
+        .header .btn button {
+            width: 455px;
+            height: 40px;
+        }
+        .header .btn button:hover {
+            background-color: #8eb135;
+        }
+        .footer {
+            height: 450px;
+        }
+        .footer .main-title {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 20px;
+        }
+        .footer .main-title p{
+            padding: 10px 10px;
+            font-size: 14px;
+            padding-bottom: 5px;
+        }
+        /* ✅ 倒數第二個 */
+        .footer .main-title a:nth-last-of-type(2){
+            margin-right: 305px;
+            padding-top: 0px;
+        }
+        .footer .icon-pic{
+            padding-top: 20px;
+        }
+        .footer .tel-block{
+            width: 480px;
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 60px;
+        }
+        .footer .branches{
+            font-size: 15px;
+        }
+        .footer .time{
+            font-size: 13px;
+        }
+        .footer .copyright {
+            display: flex;
+            flex-wrap: wrap;
+            height: 45px;
+        }
+        .footer .copyright p:first-child{
+            width: 100%;
+            position: static;
+            line-height: 2em;
+        }
+        .footer .copyright p:last-child{
+            width: 100%;
+            position: static;
+        }
+    }
+</style>
+
+
