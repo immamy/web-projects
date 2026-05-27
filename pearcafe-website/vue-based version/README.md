@@ -17,12 +17,12 @@
 ## Files
 - files
   - node_modules 👉🏼 package
-  - public 👉🏼 resource(system and page)
+  - public 👉🏼 resource (system and page)
     - `styles.css` 👉🏼 global stylesheet
     - `index.html` 👉🏼 application entry HTML file
     - `favicon.ico` 👉🏼 website icon
   - src
-    - assets 👉🏼 resource(images and fonts)
+    - assets 👉🏼 resource (images and fonts)
       - `logo.png` 👉🏼 project logo image
     - views 👉 page
     - components 👉 page
