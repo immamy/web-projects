@@ -16,20 +16,20 @@
 
 ## Files
 - files
-  - node_modules
-  - public
-    - `styles.css`
-    - `index.html`
-    - `favicon.ico`
+  - node_modules 👉🏼 package
+  - public 👉🏼 resource(system and page)
+    - `styles.css` 👉🏼 global stylesheet
+    - `index.html` 👉🏼 application entry HTML file
+    - `favicon.ico` 👉🏼 website icon
   - src
-    - assets
-      - `logo.png`
-    - views
-    - components
+    - assets 👉🏼 resource(images and fonts)
+      - `logo.png` 👉🏼 project logo image
+    - views 👉 page
+    - components 👉 page
     - router
-      - `index.ts`
-    - `App.vue`
-    - `Main.ts`
+      - `index.ts` 👉 views router
+    - `App.vue` 👉 header, footer
+    - `Main.ts` 👉🏼 styles.css router
 
 
 
