@@ -12,3 +12,25 @@
 | `ServiceView.vue` | `PearcafeService.vue` |  | 提供服務 |
 | `ServiceView.vue` | `PearcafeServiceCatering.vue` |  | 提供服務-台中外燴首選 |
 | `BlogView.vue` |  | `Blog01.json`,`Blog02.json`,`Blog03.json`,`Blog04.json`,`Blog05.json` | 梨子講座 |
+
+
+## File
+- files
+  - node_modules
+  - public
+    - `styles.css`
+    - `index.html`
+    - `favicon.ico`
+  - src
+    - assets
+      - `logo.png`
+    - views
+    - components
+    - router
+      - `index.ts`
+    - `App.vue`
+    - `Main.ts`
+
+
+
+
