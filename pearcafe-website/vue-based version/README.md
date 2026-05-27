@@ -1,14 +1,14 @@
 # Pearcafe
 
 ## File
-| files | Pages / Block |
-|-------|---------------|
-| `pearcafe.html` | 首頁 |
-| `pearcafe-about-1.html`  | 關於我們-品牌介紹 |
-| `pearcafe-about-2.html`   | 關於我們-嚴選精神 |
-| `pearcafe-store.html`  | 分店資訊 |
-| `pearcafe-menu.html`  | 梨子菜單 |
-| `pearcafe-news.html`  | 活動快遞(好康優惠-活動快遞-媒體報導) |
-| `pearcafe-service.html` | 提供服務(娜娜的幸福旅程-抓周.生日派對-婚禮現場-私廚料理-會議室租借) |
-| `pearcafe-service-catering.html`  | 提供服務-台中外燴首選 |
-| `pearcafe-blog.html` | 梨子講座(祝福學堂講座-梨子生活小學堂-梨子部落格-親子學習-讀書會) |
+| files(src/views) | files(src/components) | files(public) | Pages / Block |
+|------------------|-----------------------|---------------|---------------|
+| `Home.vue` | `Pearcafe.vue` | `HomePageNews.json` | 首頁 |
+| `AboutView.vue` | `PearcafeAbout01.vue` |  | 關於我們-品牌介紹 |
+| `AboutView.vue` | `PearcafeAbout02.vue` |  | 關於我們-嚴選精神 |
+| `StoreView.vue` | `PearcafeStore.vue` |  | 分店資訊 |
+| `MenuView.vue` | `PearcafeMenu.vue` |  | 梨子菜單 |
+| `NewsView.vue` |  | `News01.json`,`News02.json`,`News03.json` | 活動快遞 |
+| `ServiceView.vue` | `PearcafeService.vue` |  | 提供服務 |
+| `ServiceView.vue` | `PearcafeServiceCatering.vue` |  | 提供服務-台中外燴首選 |
+| `BlogView.vue` |  | `Blog01.json`,`Blog02.json`,`Blog03.json`,`Blog04.json`,`Blog05.json` | 梨子講座 |
