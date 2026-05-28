@@ -1,4 +1,4 @@
-# Web-Projects
+# Web Projects
 These projects focus on web design reconstruction and responsive web development (RWD).
 
 Technology: **HTML, CSS, JavaScript, Vue.js**
